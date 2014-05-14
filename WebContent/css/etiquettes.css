@@ -1,0 +1,14 @@
+@CHARSET "ISO-8859-1";
+
+.marge {
+margin-left: 10em;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+}

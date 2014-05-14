@@ -22,9 +22,10 @@ public class TestChargerProduit {
 		ProduitDAOMySQL dao = new ProduitDAOMySQL();
 		List<Produit> produits, produits2;
 		List<Fournisseur> fournisseurs;
+		/*
 		//Collection<Produit> produits;
 		String fichier = "C:/Users/BEN/Documents/CQP/STAGE2014-01/SWSandro/Docs/FicherProduit.csv";
-		produits = (List<Produit>) dao.chargerProduit(fichier);
+		produits = (List<Produit>) dao.chargerProduit(fichier); */
 		fournisseurs = (List<Fournisseur>) dao.findAllFournisseurs();
 		produits2 = (List<Produit>) dao.findAll();
 		
@@ -35,6 +36,8 @@ public class TestChargerProduit {
 		}
 		
 		System.out.println("***************************************************");
+		
+		/*
 		System.out.println(dao.findById(2));
 		System.out.println(dao.findById(4));
 		System.out.println(dao.findById(5));
@@ -48,7 +51,7 @@ public class TestChargerProduit {
 		four2 = fournisseurs.get(1);
 		
 		System.out.println(four2);
-		/*
+		
 		dao.delete(prod);
 		dao.deleteFournisseur(four1);
 		dao.deleteFournisseur(four2); */
